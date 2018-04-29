@@ -1,11 +1,6 @@
-# shinzui/dev
-Just a bunch of dotfiles.
+# Development apps and configurations
 
-## Install
-Clone and symlink or install with [ellipsis][ellipsis]:
+### Tools
 
-```
-$ ellipsis install shinzui/dev
-```
-
-[ellipsis]: http://ellipsis.sh
+- [watchexec](https://github.com/mattgreen/watchexec) Executes commands in response to file modifications
+- [just](https://github.com/casey/just) Just a command runner 
