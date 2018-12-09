@@ -33,9 +33,10 @@ pkg.link() {
 #     git.push
 # }
 
-# pkg.pull() {
-#     git.pull
-# }
+pkg.pull() {
+    git.pull
+    bat cache --init
+}
 
 # pkg.installed() {
 #     git.status
