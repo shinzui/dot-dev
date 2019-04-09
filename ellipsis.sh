@@ -3,14 +3,13 @@
 # shinzui/dev ellipsis package
 
 configure_bat() {
-  BAT_CONFIG_DIR="$(bat cache --config-dir)"
+  BAT_CONFIG_DIR="~/.config/bat"
 
   mkdir -p "$BAT_CONFIG_DIR/themes"
 
   cp Nord.tmTheme "$BAT_CONFIG_DIR/themes"
 
-  bat cache --init
-
+  bat cache -b
 }
 
 # The following hooks can be defined to customize behavior of your package:
@@ -35,7 +34,7 @@ pkg.link() {
 
 pkg.pull() {
     git.pull
-    bat cache --init
+    bat cache -b
 }
 
 # pkg.installed() {
