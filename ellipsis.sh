@@ -14,7 +14,7 @@ configure_bat() {
 
 # The following hooks can be defined to customize behavior of your package:
 pkg.install() {
-  brew install watchexec just bat fd
+  brew install watchexec just bat fd git-delta
   brew tap caskroom/fonts
   brew cask install font-iosevka
   brew cask install font-fira-code
